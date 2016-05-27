@@ -1,0 +1,21 @@
+alias c="clear"
+alias b="git rev-parse --abbrev-ref HEAD"
+alias gcom="git log -1"
+alias ..="cd .."
+alias ...="cd ../.."
+alias bs="git branch"
+alias div="printf \"\n---------------------------------------------------------------------------------\n\n\""
+alias topdiv="printf \"\n\n\" && div"
+alias lastmod="ls -lrth"
+alias gitls="b && gcom && div && ls && div"
+
+alias goreact="cd /Users/luke/code/webdev/react/patreon_react_features/app && topdiv && printf \"REACT\n\n\" && gitls"
+alias goangular="cd /Users/luke/code/webdev/angular/patreon_webclient/app && topdiv && printf \"ANGULAR\n\n\" && gitls"
+alias gopython="cd /Users/luke/code/webdev/py/patreon_py/patreon && topdiv && printf \"PYTHON\n\n\" && gitls"
+
+alias gong="goangular"
+alias gopy="gopython"
+alias gor="goreact"
+alias goa="goangular"
+alias gop="gopython"
+
