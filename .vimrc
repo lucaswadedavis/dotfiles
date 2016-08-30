@@ -18,3 +18,5 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+:command Deadspace :%s/\s\+$//
