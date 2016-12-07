@@ -8,7 +8,7 @@ syntax enable
 colorscheme monokai
 
 execute pathogen#infect()
-autocmd BufWritePost *.py call Flake8()
+" autocmd BufWritePost *.py call Flake8()
 syntax on
 filetype plugin indent on
 :set laststatus=2
@@ -16,7 +16,15 @@ filetype plugin indent on
 :let g:airline_theme='wombat'
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
+vmap > >gv
+vmap < <gv
+
+:set updatetime=250
+
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 :command Deadspace :%s/\s\+$//
+:inoremap ii <Esc>
+
+nnoremap // :Ack<SPACE>

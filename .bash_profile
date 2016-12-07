@@ -30,6 +30,8 @@ alias goreact="cd /Users/luke/code/webdev/react/patreon_react_features/app && c 
 alias goangular="cd /Users/luke/code/webdev/angular/patreon_webclient/app && c && printf \"\n\nANGULAR\" && gitls"
 alias gopython="cd /Users/luke/code/webdev/py/patreon_py/patreon && c && printf \"\n\nPYTHON\" && gitls"
 alias gominotaur="cd /Users/luke/code/minotaur && c && printf \"\n\nMINOTAUR\" && gitls"
+alias godj="cd /Users/luke/code/dj && c && printf \"\n\nDJ\" && gitls"
+alias gow="cd /Users/luke/code/webdev && c && printf \"\n\nWEBDEV\" && gitls"
 
 alias got="cd /Users/luke/code/deep && c && printf \"\n\nDEEP LEARNING WORKSHOP\" && gitls"
 
@@ -42,24 +44,7 @@ alias gom="gominotaur"
 
 alias dismember="git branch --merged | grep -v \"\*\" | grep -v master | grep -v dev | xargs -n 1 git branch -d"
 
-gi () {
-  grep -rnIi $1 *
+gg () {
+  git clone ssh://git@github.com/lucaswadedavis/$1.git
 }
 
-ck () {
-  git checkout $1
-}
-
-# added by Anaconda2 4.1.1 installer
-export PATH="/Users/luke/anaconda2/bin:$PATH"
-export CUDA_HOME=/usr/local/cuda
-export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
-export PATH="$CUDA_HOME/bin:$PATH"
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
-
-# export PS1='\u@\H:\w$ '
-export PS1='\n\w\n\A >>> '
